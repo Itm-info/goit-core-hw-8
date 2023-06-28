@@ -1,6 +1,8 @@
 package itm.project.shape;
 
-public abstract class Shape {
+import itm.persist.Lockable;
+
+public abstract class Shape implements Lockable {
     private String name;
     private Shape above = null;
     private Shape below = null;
